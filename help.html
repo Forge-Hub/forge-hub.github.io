@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Forge AI - Help</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia&family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+	<link rel="icon" href="forgeai-icon.png" />
+    <style>
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+      a:visited {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img
+        src="forgeai-icon.png"
+        style="height: 2.8rem; width: 2.8rem; margin-left: 0.5rem"
+      />
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div style="margin-left: 1%" id="command">
+      <h3>Commands:</h3>
+      <p>Definition: What is [Topic]</p>
+      <p>Profile: Who is [Name]</p>
+      <p>Weather: Weather in [City]</p>
+      <p>Weather Forecast: Weather forecast in [City]</p>
+      <p>Temperature: Temperature in [City]</p>
+      <p>Humidity: Humidity in [City]</p>
+      <p>Wind Speed: Wind speed in [City] <i>or</i> Wind in [City]</p>
+      <p>Factor Algebra Equation: Factor [Algebra Equation]</p>
+      <p>Solve Algebra Equation: Solve [Algebra Equation]</p>
+    </div>
+    <div style="margin-left: 1%" id="cors">
+      <h3>CORS ERROR:</h3>
+      <p>
+        If you want to use our algebra calculator and you encountered an error
+        like this <b style="color: red">x = See / corsdemo for more info</b>.
+        You can fix it by allowing cors access
+      </p>
+      <br />
+      <b>What is cors?</b>
+      <p>
+        Cors is a technique that allows a server to respond to a request from a
+        different domain.
+      </p>
+      <p>
+        <b>Consequences of allowing cors:</b> Data breaches and unauthorized
+        access from third-party websites.
+      </p>
+      <p>
+        By clicking the "Request Cors Demo" button, you will be granted a cors
+        access for 2-3 minutes. After that you can use our algebra calculator
+        without any errors.
+      </p>
+      <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank"
+        >Request Cors Demo</a
+      >
+    </div>
+    <script src="navbar.js" defer></script>
+  </body>
+</html>

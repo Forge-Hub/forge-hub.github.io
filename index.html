@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Forge AI - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="forgeai-icon.png" />
+    <style>
+      #corsDemoButton {
+        margin-left: 1%;
+        cursor: pointer;
+      }
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+      a:visited {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.2.0/math.js"></script>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <img
+        src="forgeai-icon.png"
+        style="height: 2.8rem; width: 2.8rem; margin-left: 0.5rem"
+      />
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <p class="txtP">AI's Response:</p>
+    <center><textarea id="chat" rows="10" readonly></textarea></center>
+    <br />
+    <!--
+    <button id="corsDemoButton" onclick="requestCors()">
+      Request CORS Demo</button
+    >&nbsp;&nbsp;
+    <a href="help.html">What is this for? [Must Read]</a> -->
+    <br />
+    <div
+      style="
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 1%;
+        margin-left: 1%;
+      "
+    >
+      <input
+        type="text"
+        id="input"
+        placeholder="Ask me anything..."
+        class="inputchat"
+      />
+      <input
+        type="submit"
+        value="Send"
+        class="submitchatbtn"
+        onclick="sendchat()"
+        id="submitbtnid"
+      />
+    </div>
+
+    <script>
+      function requestCors() {
+        window.open("https://cors-anywhere.herokuapp.com/corsdemo");
+      }
+    </script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+
+    <!-- Script for navbar -->
+    <script src="navbar.js" defer></script>
+  </body>
+</html>
